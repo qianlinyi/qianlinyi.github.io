@@ -1,2 +1,2 @@
-# zaizai.github.io
+# qianlinyi.github.io
 我的hexo博客
