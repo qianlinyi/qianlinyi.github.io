@@ -774,13 +774,6 @@
   </url>
   
   <url>
-    <loc>http://qianlinyi.cn/tags/%E5%B7%AE%E5%88%86/</loc>
-    <lastmod>2021-04-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://qianlinyi.cn/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</loc>
     <lastmod>2021-04-03</lastmod>
     <changefreq>daily</changefreq>
@@ -788,7 +781,21 @@
   </url>
   
   <url>
+    <loc>http://qianlinyi.cn/tags/%E5%B7%AE%E5%88%86/</loc>
+    <lastmod>2021-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://qianlinyi.cn/tags/AtCoder/</loc>
+    <lastmod>2021-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://qianlinyi.cn/tags/%E4%BA%8C%E5%88%86/</loc>
     <lastmod>2021-04-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -809,13 +816,6 @@
   </url>
   
   <url>
-    <loc>http://qianlinyi.cn/tags/%E4%BA%8C%E5%88%86/</loc>
-    <lastmod>2021-04-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://qianlinyi.cn/tags/%E8%83%8C%E5%8C%85DP/</loc>
     <lastmod>2021-04-03</lastmod>
     <changefreq>daily</changefreq>
@@ -830,13 +830,6 @@
   </url>
   
   <url>
-    <loc>http://qianlinyi.cn/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
-    <lastmod>2021-04-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://qianlinyi.cn/tags/Codeforces/</loc>
     <lastmod>2021-04-03</lastmod>
     <changefreq>daily</changefreq>
@@ -845,6 +838,13 @@
   
   <url>
     <loc>http://qianlinyi.cn/tags/bitset/</loc>
+    <lastmod>2021-04-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://qianlinyi.cn/tags/%E7%BD%91%E7%BB%9C%E6%B5%81/</loc>
     <lastmod>2021-04-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -886,14 +886,14 @@
   </url>
   
   <url>
-    <loc>http://qianlinyi.cn/tags/%E5%89%8D%E5%90%8E%E7%BC%80%E5%92%8C/</loc>
+    <loc>http://qianlinyi.cn/tags/multiset/</loc>
     <lastmod>2021-04-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://qianlinyi.cn/tags/multiset/</loc>
+    <loc>http://qianlinyi.cn/tags/%E5%89%8D%E5%90%8E%E7%BC%80%E5%92%8C/</loc>
     <lastmod>2021-04-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
