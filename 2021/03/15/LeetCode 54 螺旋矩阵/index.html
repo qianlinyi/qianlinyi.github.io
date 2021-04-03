@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"qianlinyi.cn","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="题目链接 给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。 示例 1： 12输入：matrix &#x3D; [[1,2,3],[4,5,6],[7,8,9]]输出：[1,2,3,6,9,8,7,4,5] 示例 2： 12输入：matrix &#x3D; [[1,2,3,4],[5,6,7,8],[9,10,11,12]]输出：[1,2,3,4,8,12,11,10,9">
+  <meta name="description" content="题目链接 给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。  示例 1：  12输入：matrix &#x3D; [[1,2,3],[4,5,6],[7,8,9]]输出：[1,2,3,6,9,8,7,4,5]  示例 2：  12输入：matrix &#x3D; [[1,2,3,4],[5,6,7,8],[9,10,11,12]]输出：[1,2,3,4,8,12,11,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LeetCode 54 螺旋矩阵">
 <meta property="og:url" content="http://qianlinyi.cn/2021/03/15/LeetCode%2054%20%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5/index.html">
 <meta property="og:site_name" content="旺崽的博客">
-<meta property="og:description" content="题目链接 给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。 示例 1： 12输入：matrix &#x3D; [[1,2,3],[4,5,6],[7,8,9]]输出：[1,2,3,6,9,8,7,4,5] 示例 2： 12输入：matrix &#x3D; [[1,2,3,4],[5,6,7,8],[9,10,11,12]]输出：[1,2,3,4,8,12,11,10,9">
+<meta property="og:description" content="题目链接 给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。  示例 1：  12输入：matrix &#x3D; [[1,2,3],[4,5,6],[7,8,9]]输出：[1,2,3,6,9,8,7,4,5]  示例 2：  12输入：matrix &#x3D; [[1,2,3,4],[5,6,7,8],[9,10,11,12]]输出：[1,2,3,4,8,12,11,">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20210315164403512.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20210315164410820.png">
@@ -270,11 +270,14 @@
       
         <p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/spiral-matrix/">题目链接</a></p>
 <p><font face="Consolas">给你一个 m 行 n 列的矩阵 matrix ，请按照 顺时针螺旋顺序 ，返回矩阵中的所有元素。</p>
-<h2 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h2><p><img src="https://img-blog.csdnimg.cn/20210315164403512.png" alt="在这里插入图片描述"></p>
+<h2 id="示例-1"><a class="markdownIt-Anchor" href="#示例-1"></a> 示例 1：</h2>
+<p><img src="https://img-blog.csdnimg.cn/20210315164403512.png" alt="在这里插入图片描述" /></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]</span><br><span class="line">输出：[1,2,3,6,9,8,7,4,5]</span><br></pre></td></tr></table></figure>
-<h2 id="示例-2："><a href="#示例-2：" class="headerlink" title="示例 2："></a>示例 2：</h2><p><img src="https://img-blog.csdnimg.cn/20210315164410820.png" alt="在这里插入图片描述"></p>
+<h2 id="示例-2"><a class="markdownIt-Anchor" href="#示例-2"></a> 示例 2：</h2>
+<p><img src="https://img-blog.csdnimg.cn/20210315164410820.png" alt="在这里插入图片描述" /></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]</span><br><span class="line">输出：[1,2,3,4,8,12,11,10,9,5,6,7]</span><br></pre></td></tr></table></figure>
-<p>找规律~<br>拿样例来说明，对样例一：</p>
+<p>找规律~<br />
+拿样例来说明，对样例一：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">1 2 3</span><br><span class="line">4 5 6</span><br><span class="line">7 8 9</span><br><span class="line">我们先拿出第一个列表元素 [1,2,3]</span><br><span class="line">此时矩阵为 [[4,5,6],[7,8,9]]</span><br><span class="line">我们从矩阵的每一列表元素里各取一个元素组成新矩阵 [[4,7],[5,8],[6,9]]</span><br><span class="line">再倒置，得到 [[6,9],[5,8],[4,7]]</span><br><span class="line">再拿出第一个列表元素 [6,9]</span><br><span class="line">此时矩阵为 [[5,8],[4,7]]</span><br><span class="line">从矩阵的每一列表元素里各取一个元素组成新矩阵 [[5,4],[8,7]]</span><br><span class="line">再倒置，得到 [[8,7],[5,4]]</span><br><span class="line">再拿出第一个列表元素...</span><br><span class="line">直至矩阵为空</span><br></pre></td></tr></table></figure>
 <p><font face="Consolas">对样例二我们发现也是重复上述过程，这个规律的关键就是 <font face="red">从矩阵的每一列表元素里各取一个元素组成新矩阵</font>，而 Python 中恰有这样的一个函数 zip，AC 代码如下：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">spiralOrder</span>(<span class="params">self, matrix: List[List[<span class="built_in">int</span>]]</span>) -&gt; List[int]:</span></span><br><span class="line">        res = []</span><br><span class="line">        <span class="keyword">while</span> matrix:</span><br><span class="line">            res += matrix.pop(<span class="number">0</span>)</span><br><span class="line">            matrix = <span class="built_in">list</span>(<span class="built_in">zip</span>(*matrix))[::-<span class="number">1</span>]</span><br><span class="line">        <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
@@ -363,7 +366,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-1%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">示例 1：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-2%EF%BC%9A"><span class="nav-number">2.</span> <span class="nav-text">示例 2：</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-1"><span class="nav-number">1.</span> <span class="nav-text"> 示例 1：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B-2"><span class="nav-number">2.</span> <span class="nav-text"> 示例 2：</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
