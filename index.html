@@ -748,6 +748,22 @@
                                        href="https://www.youtube.com/watch?v=eBMoeXvOdXg"></a>
                                 </div>
                             </li>
+                            <li class="other">
+                                <div class="list_inner">
+                                    <div class="image">
+                                        <img src="img/thumbs/1-1.jpg" alt=""/>
+                                        <div class="main" data-img-url="img/portfolio/cover.png"></div>
+                                    </div>
+                                    <div class="overlay"></div>
+                                    <!--                                    <img class="svg" src="img/svg/social/youtube-2.svg" alt=""/>-->
+                                    <div class="details">
+                                        <span>Springer</span>
+                                        <h3>paper link</h3>
+                                    </div>
+                                    <a class="iknow_tm_full_link"
+                                       href="https://link.springer.com/chapter/10.1007/978-3-031-53308-2_20"></a>
+                                </div>
+                            </li>
 
                             <!--                            <li class="detail">-->
                             <!--                                <div class="list_inner">-->
@@ -1338,18 +1354,28 @@
                                                         <br>
                                                         &nbsp;&nbsp;&nbsp;&nbsp;int waysToSplit(vector
                                                         &#60int&#62 &nums) {<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;len = nums.size();<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i < len; i++) {<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (i == 0) pre[i] = nums[i];<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else pre[i] = pre[i - 1] + nums[i];<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;len =
+                                                        nums.size();<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0;
+                                                        i < len; i++) {<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if
+                                                        (i == 0) pre[i] = nums[i];<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+                                                        pre[i] = pre[i - 1] + nums[i];<br>
                                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v.push_back(pre[i]);<br>
                                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i < len - 2; i++) {<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int pos1 = lower_bound(v.begin() + i + 1, v.end(),
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pre[i] + pre[i]) - v.begin();<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (pos1 == v.size()) break;<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int pos2 = bs(pos1, len - 2, i);<br>
-                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ans = (ans + (long long) (pos2 - pos1 + 1)) % mod;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0;
+                                                        i < len - 2; i++) {<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int
+                                                        pos1 = lower_bound(v.begin() + i + 1, v.end(),
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pre[i]
+                                                        + pre[i]) - v.begin();<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if
+                                                        (pos1 == v.size()) break;<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int
+                                                        pos2 = bs(pos1, len - 2, i);<br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ans
+                                                        = (ans + (long long) (pos2 - pos1 + 1)) % mod;<br>
                                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
                                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return ans;<br>
                                                         &nbsp;&nbsp;&nbsp;&nbsp;}<br>
@@ -1450,13 +1476,13 @@
                         <p>Designed with love &copy; <a href="https://themeforest.net/user/marketify" target="_blank">Marketify</a>
                         </p>
                     </div>
-<!--                    <div class="right">-->
-<!--                        <ul>-->
-<!--                            <li><a href="#">Terms &amp; Condition</a></li>-->
-<!--                            <li><a href="#">Privacy Policy</a></li>-->
-<!--                            <li><a href="#">Login</a></li>-->
-<!--                        </ul>-->
-<!--                    </div>-->
+                    <!--                    <div class="right">-->
+                    <!--                        <ul>-->
+                    <!--                            <li><a href="#">Terms &amp; Condition</a></li>-->
+                    <!--                            <li><a href="#">Privacy Policy</a></li>-->
+                    <!--                            <li><a href="#">Login</a></li>-->
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
                 </div>
             </div>
             <span class="bottom_shape"></span>
