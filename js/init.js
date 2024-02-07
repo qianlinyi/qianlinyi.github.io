@@ -574,9 +574,11 @@ function iknow_tm_contact_form(){
 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
 		}
 		else{
+			console.log(name, email, message)
 			// Returns successful data submission message when the entered information is stored in database.
 			jQuery.post("../modal/contact.php",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
 				
+				console.log(name, email, message)
 				jQuery(".contact_form .returnmessage").append(data);//Append returned message to message paragraph
 				
 				
