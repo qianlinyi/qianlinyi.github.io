@@ -389,7 +389,7 @@ function progress_by_frenify(wrapper){
 	element.each(function() {
 		var pWrap = jQuery(this);
 		pWrap.find('.number').css({right:'100%'});
-		console.log(pWrap.find('.number').length);
+		//console.log(pWrap.find('.number').length);
 		pWrap.waypoint({handler: function(){tdProgress(pWrap);},offset:'90%'});	
 	});
 }
@@ -574,7 +574,7 @@ function iknow_tm_contact_form(){
 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
 		}
 		else{
-			console.log(name, email, message)
+			console.log("test", name, email, message)
 			// Returns successful data submission message when the entered information is stored in database.
 			jQuery.post("../modal/contact.php",{ ajax_name: name, ajax_email: email, ajax_message:message, ajax_subject: subject}, function(data) {
 				
